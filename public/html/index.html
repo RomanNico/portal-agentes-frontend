@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal de Agentes</title>
+
+    <link rel="icon" href="/assets/img/icono.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+
+                <a href="index.html" class="logo">
+                    <img src="/assets/img/logo blanco.png" alt="Logo Comware">
+                </a>
+
+                <div class="nav-links">
+                    <a href="catalogo.html">Catálogo</a>
+                </div>
+
+                <!-- Login / Logout deshabilitado temporalmente -->
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main-content">
+
+        <section class="intro">
+            <h1>Bienvenido al Portal de Agentes</h1>
+            <p>
+                Desde aquí puedes interactuar con asistentes de inteligencia artificial,
+                crear un nuevo requerimiento o acceder a los agentes disponibles.
+            </p>
+        </section>
+
+        <section class="actions">
+
+            <!-- NOVA -->
+            <div class="action-card" onclick="irNova()">
+                <div class="icon">
+                    <img src="/assets/img/NOVAA.png" alt="Asistente NOVA">
+                </div>
+                <div class="content">
+                    <h3>Asistente NOVA</h3>
+                    <p>
+                        Crea y gestiona asistentes de inteligencia artificial.
+                    </p>
+                    <span class="action-btn">Ver Detalles →</span>
+                </div>
+            </div>
+
+            <!-- AGENTES -->
+            <div class="action-card" onclick="irAgentes()">
+                <div class="icon">
+                    <img src="/assets/img/agente.png" alt="Agentes Inteligentes">
+                </div>
+                <div class="content">
+                    <h3>Agentes</h3>
+                    <p>
+                        Accede a los agentes inteligentes disponibles.
+                    </p>
+                    <span class="action-btn">Ir a Agentes →</span>
+                </div>
+            </div>
+
+            <!-- NUEVO REQUERIMIENTO -->
+            <div class="action-card" onclick="location.href='solicitar.html'">
+                <div class="icon">
+                    <img src="/assets/img/registro.png" alt="Nuevo Requerimiento">
+                </div>
+                <div class="content">
+                    <h3>Solicitar</h3>
+                    <p>
+                        Solicita un Servicio y/o Agente.
+                    </p>
+                    <span class="action-btn">Crear Ahora →</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
