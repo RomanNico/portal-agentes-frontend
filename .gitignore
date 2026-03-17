@@ -4,3 +4,4 @@ build
 .vite
 .env
 *.log
+public/assets/video/
