@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icono.png">
+    <title>Validación de Requerimientos - Admin</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+                <a href="inicio.html" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Empresa">
+                </a>
+                <div class="nav-links">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="misRequerimientos.html">Mis Requerimientos</a>
+                    <a href="validacion.html" id="navValidar">Validación</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="perfil.html" class="perfil-btn">
+                        <img id="navAvatar" src="img/avatar.png" alt="Perfil">
+                    </a>
+
+                    <a href="#" class="logout-btn" onclick="logout()">
+                        <img src="img/log-out.png" alt="Salir">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="page-header">
+            <h1>Validación del Requerimiento</h1>
+            <p>Revisión técnica y funcional por parte de Product Owner y QA.</p>
+        </section>
+
+        <section class="result-card">
+
+            <div class="card-top-bar">
+                <div class="status-badge warning" id="estadoValidacion">
+                    Pendiente de validación
+                </div>
+
+                <button class="btn-icon-volver top-volver" onclick="irValidacion()" title="Volver a la lista">
+                    <img src="img/anterior.png" class="img-volver">
+                </button>
+            </div>
+
+            <div class="document-preview" id="resultadoContenido">
+                Cargando documento técnico...
+            </div>
+
+            <div class="validation-panel">
+                <div class="panel-header">
+                    <h3>Controles de Validación</h3>
+                </div>
+
+                <div class="check-group">
+                    <label class="check-card">
+                        <input type="checkbox" id="checkPO">
+                        <div class="card-content">
+                            <span class="check-icon">👤</span>
+                            <span class="check-text">Product Owner</span>
+                        </div>
+                    </label>
+
+                    <label class="check-card">
+                        <input type="checkbox" id="checkQA">
+                        <div class="card-content">
+                            <span class="check-icon">🛡️</span>
+                            <span class="check-text">QA Técnica</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="reject-reason-container">
+                    <label for="motivoRechazo" class="textarea-label">
+                        Motivo de rechazo u observaciones técnicas:
+                    </label>
+                    <textarea id="motivoRechazo"
+                        placeholder="Si vas a rechazar, explica detalladamente los cambios necesarios..."></textarea>
+                </div>
+            </div>
+
+            <div class="actions-buttons">
+                <div class="buttons-right">
+                    <button class="btn-primary" onclick="verPDF()">👁️ Ver PDF</button>
+                    <button class="btn-secondary" onclick="editarPDF()">✏️ Editar</button>
+
+                    <button id="btnRechazar" class="btn-danger-modern" onclick="rechazarRequerimiento()">
+                        ❌ Rechazar
+                    </button>
+
+                    <button id="btnEnviarJira" class="btn-success-modern" disabled>
+                        🚀 Aprobar y Enviar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
