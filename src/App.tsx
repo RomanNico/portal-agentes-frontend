@@ -46,6 +46,7 @@ return(
 <Route path="/catalogo.html" element={<PageLoader page="catalogo.html"/>}/>
 <Route path="/catalogo_CRM_PREVISORA" element={<PageLoader page="catalogo_CRM_PREVISORA.html"/>}/>
 <Route path="/catalogo_CRM_PREVISORA.html" element={<PageLoader page="catalogo_CRM_PREVISORA.html"/>}/>
+<<<<<<< HEAD
 <Route path="/catalogo_SURVEYWARE" element={<PageLoader page="catalogo_SURVEYWARE.html"/>}/>
 <Route path="/catalogo_SURVEYWARE.html" element={<PageLoader page="catalogo_SURVEYWARE.html"/>}/>
 <Route path="/catalogo_CRM_FUCN" element={<PageLoader page="catalogo_CRM_FUCN.html"/>}/>
@@ -62,6 +63,8 @@ return(
 <Route path="/catalogo_INTRANET.html" element={<PageLoader page="catalogo_INTRANET.html"/>}/>
 <Route path="/catalogo_METRICAS" element={<PageLoader page="catalogo_METRICAS.html"/>}/>
 <Route path="/catalogo_METRICAS.html" element={<PageLoader page="catalogo_METRICAS.html"/>}/>
+=======
+>>>>>>> d53aebe9550ff6d567ac7df29d6ea0ec420e0029
 <Route path="/index" element={<PageLoader page="index.html"/>}/>
 <Route path="/index.html" element={<PageLoader page="index.html"/>}/>
 <Route path="/plantillaAgente" element={<PageLoader page="plantillaAgente.html"/>}/>

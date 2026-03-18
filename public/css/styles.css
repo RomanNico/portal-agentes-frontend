@@ -831,12 +831,15 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
+<<<<<<< HEAD
 .img-whatsapp {
     max-width: 320px;
     width: 100%;
     height: auto;
 }
 
+=======
+>>>>>>> d53aebe9550ff6d567ac7df29d6ea0ec420e0029
 /* CONTENIDO */
 .agent-detail-content {
     max-width: 1200px;
@@ -1395,8 +1398,12 @@ PRODUCT PAGE
     position: absolute;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
 
     object-fit: cover;
+=======
+    object-fit: contain;
+>>>>>>> d53aebe9550ff6d567ac7df29d6ea0ec420e0029
     opacity: 0;
     transition: opacity .5s ease;
 }
@@ -1405,7 +1412,10 @@ PRODUCT PAGE
     opacity: 1;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d53aebe9550ff6d567ac7df29d6ea0ec420e0029
 .carousel-btn {
     position: absolute;
     top: 50%;
