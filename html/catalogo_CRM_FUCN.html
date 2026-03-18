@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM FUCN</title>
+
+    <link rel="icon" href="/assets/img/icono.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+
+                <a href="/index.html" class="logo">
+                    <img src="/assets/img/logo blanco.png" alt="Logo Comware">
+                </a>
+
+                <div class="nav-links">
+                    <a href="/index.html" class="active-link">Inicio</a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="product-page">
+
+        <!-- HERO -->
+        <section class="product-hero">
+
+            <div class="hero-container">
+
+                <div class="hero-left">
+
+                    <span class="product-tag">CRM Omnicanal</span>
+
+                    <h1>CRM FUCN / UCDC</h1>
+
+                    <p>
+                        Plataforma omnicanal que integra el sitio web de la Universidad Católica del Norte,
+                        Bright Pattern y múltiples canales de atención, permitiendo gestionar interacciones,
+                        tipificaciones y casos de manera centralizada.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="/catalogo.html" class="btn-primary">Volver al Catálogo</a>
+                        <a href="/solicitar.html" class="btn-primary">Solicitar Implementación</a>
+                    </div>
+
+                </div>
+
+                <div class="hero-right">
+                    <img src="/assets/img/FUCN.png" alt="CRM FUCN">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CAROUSEL -->
+        <div class="product-carousel">
+
+            <h2>Vista del Sistema</h2>
+
+            <div class="carousel-container">
+
+                <button class="carousel-btn prev">&#10094;</button>
+
+                <div class="carousel-slides">
+                    <img src="/assets/img/fucn1.png" class="slide active">
+                    <img src="/assets/img/fucn2.png" class="slide">
+                    <img src="/assets/img/fucn3.png" class="slide">
+                </div>
+
+                <button class="carousel-btn next">&#10095;</button>
+
+            </div>
+
+        </div>
+
+        <!-- BENEFICIOS -->
+        <section class="benefits">
+
+            <h2>Beneficios</h2>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <span>🔗</span>
+                    <h3>Omnicanalidad</h3>
+                    <p>Unifica chat, correo, WhatsApp y redes sociales en una sola plataforma.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>⚡</span>
+                    <h3>Automatización</h3>
+                    <p>Recepción automática de datos desde Bright Pattern sin ingreso manual.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>📊</span>
+                    <h3>Trazabilidad Completa</h3>
+                    <p>Registro detallado de cada interacción, acción y cambio realizado.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>📈</span>
+                    <h3>Gestión de Casos</h3>
+                    <p>Seguimiento, escalamiento y control del ciclo de vida de los casos.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FUNCIONALIDADES -->
+        <section class="modules">
+
+            <h2>Funcionalidades</h2>
+
+            <div class="modules-grid">
+
+                <div class="module">
+                    <h3>Formularios por Canal</h3>
+                    <p>Chat, correo, WhatsApp, redes sociales, inbound y outbound.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Histórico de Usuario</h3>
+                    <p>Consulta interacciones previas filtrando por documento.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Gestión de Casos N2</h3>
+                    <p>Visualización, filtrado y seguimiento de casos generados.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Alertas Académicas</h3>
+                    <p>Registro de alertas por parte de docentes sobre estudiantes.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Registros Web</h3>
+                    <p>Captura automática de formularios desde el sitio web.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Templates WhatsApp</h3>
+                    <p>Gestión y envío de plantillas autorizadas.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Usuarios</h3>
+                    <p>Administración de accesos e integración con Bright Pattern.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- VIDEO -->
+        <div class="product-video">
+
+            <h2>Video de Demostración</h2>
+
+            <video controls>
+                <source src="/assets/video/CRM-FUCN.mp4">
+            </video>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="product-cta">
+
+            <h2>Centraliza la atención de tus usuarios</h2>
+
+            <p>
+                CRM FUCN permite gestionar interacciones, automatizar procesos y
+                mejorar la atención mediante una solución omnicanal robusta.
+            </p>
+
+            <a href="/catalogo.html" class="btn-primary">Explorar más soluciones</a>
+
+        </div>
+
+    </section>
+
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+
+        function showSlide(i) {
+            slides.forEach(s => s.classList.remove("active"));
+            slides[i].classList.add("active");
+        }
+
+        document.querySelector(".next").onclick = () => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        };
+
+        document.querySelector(".prev").onclick = () => {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        };
+
+        setInterval(() => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }, 5000);
+    </script>
+
+</body>
+
+</html>

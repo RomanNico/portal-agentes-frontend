@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icono.png">
+    <title>Registro de Requerimientos</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+                <a href="inicio.html" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Empresa">
+                </a>
+                <div class="nav-links">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="misRequerimientos.html">Mis Requerimientos</a>
+                    <a href="validacion.html" id="navValidar">Validación</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="perfil.html" class="perfil-btn">
+                        <img id="navAvatar" src="img/avatar.png" alt="Perfil">
+                    </a>
+
+                    <a href="#" class="logout-btn" onclick="logout()">
+                        <img src="img/log-out.png" alt="Salir">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="page-header">
+            <h1>Bandeja de Validación</h1>
+            <p>Seleccione un requerimiento para revisar y validar.</p>
+        </section>
+
+        <section class="result-card">
+
+            <div id="listaRequerimientos" class="validacion-grid">
+                Cargando requerimientos...
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

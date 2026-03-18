@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.vite
+.env
+<<<<<<< HEAD
+*.log
+public/assets/video/
+=======
+*.log
+>>>>>>> d53aebe9550ff6d567ac7df29d6ea0ec420e0029

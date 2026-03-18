@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletines y Métricas CCB</title>
+
+    <link rel="icon" href="/assets/img/icono.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+
+                <a href="/index.html" class="logo">
+                    <img src="/assets/img/logo blanco.png" alt="Logo Comware">
+                </a>
+
+                <div class="nav-links">
+                    <a href="/index.html" class="active-link">Inicio</a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="product-page">
+
+        <!-- HERO -->
+        <section class="product-hero">
+
+            <div class="hero-container">
+
+                <div class="hero-left">
+
+                    <span class="product-tag">Email Marketing</span>
+
+                    <h1>Boletines y Métricas CCB</h1>
+
+                    <p>
+                        Solución para la gestión y envío masivo de boletines mediante la
+                        plataforma MASIV, permitiendo distribuir contenido en HTML,
+                        gestionar destinatarios y analizar métricas de campañas.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="/catalogo.html" class="btn-primary">Volver al Catálogo</a>
+                        <a href="/solicitar.html" class="btn-primary">Solicitar Implementación</a>
+                    </div>
+
+                </div>
+
+                <div class="hero-right">
+                    <img src="public\assets\img\logo sin fondo.png" alt="Metricas">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CAROUSEL -->
+        <div class="product-carousel">
+
+            <h2>Vista del Sistema</h2>
+
+            <div class="carousel-container">
+
+                <button class="carousel-btn prev">&#10094;</button>
+
+                <div class="carousel-slides">
+                    <img src="/assets/img/masiv1.png" class="slide active">
+                    <img src="/assets/img/masiv2.png" class="slide">
+                    <img src="/assets/img/masiv3.png" class="slide">
+                    <img src="/assets/img/masiv4.png" class="slide">
+                </div>
+
+                <button class="carousel-btn next">&#10095;</button>
+
+            </div>
+
+        </div>
+
+        <!-- BENEFICIOS -->
+        <section class="benefits">
+
+            <h2>Beneficios</h2>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <span>📧</span>
+                    <h3>Envío Masivo</h3>
+                    <p>Distribución eficiente de boletines a grandes volúmenes de usuarios.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>🎨</span>
+                    <h3>Contenido HTML</h3>
+                    <p>Diseño de boletines con plantillas estructuradas y visuales.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>📊</span>
+                    <h3>Métricas y Reportes</h3>
+                    <p>Seguimiento de campañas mediante reportes ejecutivos y detallados.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>⚡</span>
+                    <h3>Optimización de Campañas</h3>
+                    <p>Control de envíos, desuscripciones y segmentación de usuarios.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FUNCIONALIDADES -->
+        <section class="modules">
+
+            <h2>Funcionalidades</h2>
+
+            <div class="modules-grid">
+
+                <div class="module">
+                    <h3>Gestión de Envíos</h3>
+                    <p>Creación de campañas masivas y transaccionales.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Gestión de Destinatarios</h3>
+                    <p>Carga y validación de bases de datos desde Excel.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Plantillas HTML</h3>
+                    <p>Creación y carga de boletines en formato ZIP.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Reportes</h3>
+                    <p>Reportes ejecutivos, detallados e históricos de envíos.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Desuscripciones</h3>
+                    <p>Gestión de usuarios que cancelan la suscripción.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Previsualización</h3>
+                    <p>Validación del diseño en desktop, tablet y móvil.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- VIDEO -->
+        <div class="product-video">
+
+            <h2>Video de Demostración</h2>
+
+            <video controls>
+                <source src="/assets/video/MASIV.mp4">
+            </video>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="product-cta">
+
+            <h2>Potencia tus campañas de comunicación</h2>
+
+            <p>
+                Gestiona, diseña y envía boletines de forma masiva con control total
+                sobre el contenido, los destinatarios y los resultados.
+            </p>
+
+            <a href="/catalogo.html" class="btn-primary">Explorar más soluciones</a>
+
+        </div>
+
+    </section>
+
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+
+        function showSlide(i) {
+            slides.forEach(s => s.classList.remove("active"));
+            slides[i].classList.add("active");
+        }
+
+        document.querySelector(".next").onclick = () => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        };
+
+        document.querySelector(".prev").onclick = () => {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        };
+
+        setInterval(() => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }, 5000);
+    </script>
+
+</body>
+
+</html>
